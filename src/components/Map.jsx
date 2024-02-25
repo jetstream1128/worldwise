@@ -34,17 +34,22 @@ function Map() {
 		[mapLat, mapLng]
 	);
 
+	useEffect(
+		function () {
+			if (geolocationPosition)
+				setMapPosition([geolocationPosition.lat, geolocationPosition.lng]);
+		},
+		[geolocationPosition]
+	);
+
 	return (
 		<div className={styles.mapContainer}>
-			<Button type="position" onClick={getPosition}>
-				{isLoadingPosition ? "Loading..." : "Use your position"}
-			</Button>
-			<MapContainer
-				center={mapPosition}
-				zoom={13}
-				scrollWheelZoom={false}
-				className={styles.map}
-			>
+			{!geolocationPosition && (
+				<Button type="position" onClick={getPosition}>
+					{isLoadingPosition ? "Loading..." : "Use your position"}
+				</Button>
+			)}
+			<MapContainer center={mapPosition} zoom={13} className={styles.map}>
 				<TileLayer
 					attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 					url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
