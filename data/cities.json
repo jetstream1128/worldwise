@@ -37,76 +37,40 @@
       "id": 98443197
     },
     {
-      "cityName": "Almassora",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-02-25T18:49:59.031Z",
-      "notes": "hhhhhh",
+      "cityName": "Calgary",
+      "country": "Canada",
+      "emoji": "🇨🇦",
+      "date": "2024-02-25T18:59:55.837Z",
+      "notes": "home",
       "position": {
-        "lat": "39.97767200106886",
-        "lng": "-0.11501312255859376"
+        "lat": "51.031979926480844",
+        "lng": "-114.06761169433595"
       },
-      "id": 98443198
+      "id": 98443204
     },
     {
-      "cityName": "Almassora",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-02-25T18:49:59.031Z",
-      "notes": "hhhhhh",
+      "cityName": "Washington",
+      "country": "United States of America (the)",
+      "emoji": "🇺🇸",
+      "date": "2024-02-25T19:14:54.142Z",
+      "notes": "",
       "position": {
-        "lat": "39.97767200106886",
-        "lng": "-0.11501312255859376"
+        "lat": "38.72398417724657",
+        "lng": "-76.94824218750001"
       },
-      "id": 98443199
-    },
-    {
-      "cityName": "Onda",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-02-25T18:54:02.720Z",
-      "notes": "sds",
-      "position": {
-        "lat": "39.98069201240256",
-        "lng": "-0.14625549316406253"
-      },
-      "id": 98443200
-    },
-    {
-      "cityName": "Onda",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-02-25T18:54:27.029Z",
-      "notes": "sd",
-      "position": {
-        "lat": "39.98069201240256",
-        "lng": "-0.14625549316406253"
-      },
-      "id": 98443201
-    },
-    {
-      "cityName": "Ocana",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-02-25T18:57:20.340Z",
-      "notes": "sd",
-      "position": {
-        "lat": "39.958631333372246",
-        "lng": "-3.4689331054687504"
-      },
-      "id": 98443202
+      "id": 98443205
     },
     {
       "cityName": "Castello de la Plana",
       "country": "Spain",
       "emoji": "🇪🇸",
-      "date": "2024-02-25T18:59:47.563Z",
-      "notes": "sdd",
+      "date": "2024-02-25T19:45:43.593Z",
+      "notes": "",
       "position": {
-        "lat": "39.98661977590957",
-        "lng": "-0.029869079589843753"
+        "lat": "39.98477938461409",
+        "lng": "-0.05149841308593751"
       },
-      "id": 98443203
+      "id": 98443206
     }
   ]
 }

@@ -67,7 +67,7 @@ function Form() {
 		[lat, lng]
 	);
 
-	function handleSubmit(e) {
+	async function handleSubmit(e) {
 		e.preventDefault();
 		if (!cityName || !date) return;
 		const newCity = {
@@ -79,8 +79,8 @@ function Form() {
 			position: { lat, lng },
 		};
 
-		createCity(newCity);
-		navigate("..");
+		await createCity(newCity);
+		navigate("/app/cities");
 	}
 
 	if (isLoadingGeocoding) return <Spinner />;
