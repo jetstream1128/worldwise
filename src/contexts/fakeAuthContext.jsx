@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useContext, useReducer } from "react";
 
 const AuthContext = createContext();
@@ -21,14 +22,14 @@ function reducer(state, action) {
 }
 
 const FAKE_USER = {
-	name: "Jack",
-	email: "jack@example.com",
+	name: "Bohdan",
+	email: "bohdan@example.com",
 	password: "qwerty",
 	avatar: "https://i.pravatar.cc/100?u=zz",
 };
 
 function AuthProvider({ children }) {
-	const [{ user, isAuthenticated, dispatch }] = useReducer(
+	const [{ user, isAuthenticated }, dispatch] = useReducer(
 		reducer,
 		initialState
 	);
@@ -43,7 +44,7 @@ function AuthProvider({ children }) {
 	}
 
 	return (
-		<AuthContext.Provider value={(user, isAuthenticated, login, logout)}>
+		<AuthContext.Provider value={{ user, isAuthenticated, login, logout }}>
 			{children}
 		</AuthContext.Provider>
 	);
@@ -51,9 +52,8 @@ function AuthProvider({ children }) {
 
 function useAuth() {
 	const context = useContext(AuthContext);
-	if (context === undefined) {
+	if (context === undefined)
 		throw new Error("AuthContext was used outside AuthProvider");
-	}
+	return context;
 }
-
 export { AuthProvider, useAuth };
