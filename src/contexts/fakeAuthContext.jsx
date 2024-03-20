@@ -55,4 +55,5 @@ function useAuth() {
 		throw new Error("AuthContext was used outside AuthProvider");
 	return context;
 }
-export default { AuthProvider, useAuth };
+// eslint-disable-next-line react-refresh/only-export-components
+export { AuthProvider, useAuth };
